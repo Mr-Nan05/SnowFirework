@@ -247,9 +247,9 @@ if __name__ == "__main__":
 
 将运行结果简单截了几张图，如果视频无法播放请移步github下载观看，谢谢
 
-<video src="D:\日常生活\CSDN\SnowFirework\运行示例.mp4"></video>
+<video src="运行示例.mp4"></video>
 
 <img src="D:\日常生活\CSDN\SnowFirework\运行示例.gif" alt="运行示例" style="zoom:150%;" />
 
-![运行示例2](D:\日常生活\CSDN\SnowFirework\运行示例2.png)![运行示例3](D:\日常生活\CSDN\SnowFirework\运行示例3.png)![运行示例1](D:\日常生活\CSDN\SnowFirework\运行示例1.png)
+![运行示例2](D:\日常生活\CSDN\SnowFirework\运行示例2.png)![运行示例3](运行示例3.png)![运行示例1](D:\日常生活\CSDN\SnowFirework\运行示例1.png)
 
