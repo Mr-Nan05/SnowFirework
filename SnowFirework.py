@@ -2,6 +2,7 @@ import pygame
 import math
 import random
 
+# 窗口大小设置
 WIN_W = 1000
 WIN_H = 544
 
@@ -9,6 +10,7 @@ t1 = 0.18  # 时间流速
 show_n = 0
 show_frequency = 0.002  # 烟花绽放频率，数值越大频率越高
 
+# 每一个列表都是一个颜色的三元组
 color_list = [
                 [255, 50, 50],
                 [50, 255, 50],
@@ -34,12 +36,14 @@ class BackGround:
         self.bgp_set()
         self.bgm_set()
 
+    # 背景图片以及窗口设置
     def bgp_set(self):
         # 设置屏幕宽高，根据背景图调整
         self.screen = pygame.display.set_mode(self.img_size)
         pygame.display.set_caption("Happy New Year!")
         self.bgp = pygame.image.load(self.img_path)
 
+    # 背景音乐及播放时长设置
     def bgm_set(self):
         # 添加音乐
         pygame.mixer.music.load(self.msc_path)  # 加载音乐文件
@@ -121,7 +125,6 @@ def snowing(background):
             snow_list[i][0] = random.randrange(0, background.img_size[0])
 
 
-
 fk_list = [Fireworks(300, 300, -20, n=100, color=[0, 255, 0], v=10),
            Fireworks(300, 300, -20, n=200, color=[0, 0, 255], v=11),
            Fireworks(300, 300, -20, n=200, color=[0, 0, 255], v=12),
@@ -163,7 +166,7 @@ def show(background):
         # 雪花飘落
         snowing(background)
 
-        # 放烟花
+        # 放烟花，可以通过控制snowing方法和firework方法的调用比例来调整二者的相对速率
         # firework(background)
         firework(background)
 
